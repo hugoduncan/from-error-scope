@@ -1,0 +1,11 @@
+[package]
+
+name = "from_error_scope"
+version = "0.0.1"
+authors = ["Hugo Duncan <hugo@hugoduncan.org>"]
+description = "Enable scoped conversion between non-local Error types"
+keywords = ["error", "try"]
+repository = "https://github.com/hugoduncan/from-error-scope"
+documentation = "http://hugoduncan.github.io/from-error-scope/from_error_scope/index.html"
+readme = "README.md"
+license = "Apache-2.0"
