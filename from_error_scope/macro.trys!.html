@@ -26,7 +26,7 @@
 
     <section class="sidebar">
         
-        <p class='location'><a href='index.html'>from_error_scope</a></p><div class='block trait'><h2>Traits</h2><a class='trait ' href='trait.FromErrorScope.html' title='A FromError like trait, that can be implemented on an explicit Scope type, enabling conversion between non-local Error types.'>FromErrorScope</a></div><div class='block macro'><h2>Macros</h2><a class='macro current' href='macro.trys!.html' title='A try like macro that takes an additional type argument for a type that implements FromErrorScope.  You may wish to wrap this macro for a specific error scope, to shorten invocations.'>trys!</a></div>
+        <p class='location'><a href='index.html'>from_error_scope</a></p><div class='block trait'><h2>Traits</h2><a class='trait ' href='trait.FromErrorScope.html' title='A [`FromError`](http://doc.rust-lang.org/std/error/trait.FromError.html) like trait, that can be implemented on an explicit Scope type, enabling conversion between non-local [`Error`](http://doc.rust-lang.org/std/error/trait.Error.html) types.'>FromErrorScope</a></div><div class='block macro'><h2>Macros</h2><a class='macro current' href='macro.trys!.html' title='A [`try!`](http://doc.rust-lang.org/std/macro.try!.html) like macro that takes an additional type argument for a type that implements [`FromErrorScope`](./trait.FromErrorScope.html).  You may wish to wrap this macro for a specific error scope, to shorten invocations.'>trys!</a></div>
     </section>
 
     <nav class="sub">
@@ -44,7 +44,7 @@
 <h1 class='fqn'><span class='in-band'><a href='index.html'>from_error_scope</a>::<wbr><a class='macro' href=''>trys!</a><wbr></span><span class='out-of-band'><span id='render-detail'>
             <a id="collapse-all" href="#">[-]
             </a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-19' href='../src/from_error_scope/lib.rs.html#67-74'>[src]</a></span></h1>
+        </span><a id='src-19' href='../src/from_error_scope/lib.rs.html#75-82'>[src]</a></span></h1>
 <pre class='rust macro'>
 <span class='macro'>macro_rules</span><span class='macro'>!</span> <span class='ident'>trys</span> {
     (<span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>tr</span>:<span class='ident'>expr</span>, <span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>expr</span>:<span class='ident'>expr</span>) <span class='op'>=&gt;</span> (<span class='kw'>match</span> <span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>expr</span> {
@@ -55,9 +55,11 @@
     })
 }
 </pre>
-<div class='docblock'><p>A try like macro that takes an additional type argument for a type
-that implements FromErrorScope.  You may wish to wrap this macro
-for a specific error scope, to shorten invocations.</p>
+<div class='docblock'><p>A <a href="http://doc.rust-lang.org/std/macro.try!.html"><code>try!</code></a> like
+macro that takes an additional type argument for a type that
+implements <a href="./trait.FromErrorScope.html"><code>FromErrorScope</code></a>.  You
+may wish to wrap this macro for a specific error scope, to shorten
+invocations.</p>
 </div></section>
     <section id='search' class="content hidden"></section>
 

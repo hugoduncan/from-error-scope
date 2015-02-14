@@ -44,12 +44,14 @@
 <h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>from_error_scope</a><wbr></span><span class='out-of-band'><a href='stability.html'>[stability]</a> <span id='render-detail'>
             <a id="collapse-all" href="#">[-]
             </a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-0' href='../src/from_error_scope/lib.rs.html#15-133'>[src]</a></span></h1>
+        </span><a id='src-0' href='../src/from_error_scope/lib.rs.html#15-141'>[src]</a></span></h1>
 <div class='docblock'><p>Enable conversion between non-local <code>Error</code> types.</p>
 
 <p>When using libraries, your code often needs to convert between
-<code>Error</code> types which aren&#39;t part of your local crate. In this case
-you can&#39;t implement <code>std::error::FromError</code>.</p>
+<a href="http://doc.rust-lang.org/std/error/trait.Error.html"><code>Error</code></a>
+types which aren&#39;t part of your local crate. In this case you
+can&#39;t implement
+<a href="http://doc.rust-lang.org/std/error/trait.FromError.html"><code>std::error::FromError</code></a>.</p>
 
 <p>This is also useful if you need context dependent translation of
 error types.</p>
@@ -86,9 +88,11 @@ error types.</p>
                     <tr>
                         <td><a class='stability Unmarked' title='No stability level'></a><a class='macro' href='macro.trys!.html'
                                title='from_error_scope::trys!'>trys!</a></td>
-                        <td class='docblock short'><p>A try like macro that takes an additional type argument for a type
-that implements FromErrorScope.  You may wish to wrap this macro
-for a specific error scope, to shorten invocations.</p>
+                        <td class='docblock short'><p>A <a href="http://doc.rust-lang.org/std/macro.try!.html"><code>try!</code></a> like
+macro that takes an additional type argument for a type that
+implements <a href="./trait.FromErrorScope.html"><code>FromErrorScope</code></a>.  You
+may wish to wrap this macro for a specific error scope, to shorten
+invocations.</p>
 </td>
                     </tr>
                 </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
@@ -96,8 +100,12 @@ for a specific error scope, to shorten invocations.</p>
                     <tr>
                         <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.FromErrorScope.html'
                                title='from_error_scope::FromErrorScope'>FromErrorScope</a></td>
-                        <td class='docblock short'><p>A FromError like trait, that can be implemented on an explicit
-Scope type, enabling conversion between non-local Error types.</p>
+                        <td class='docblock short'><p>A
+<a href="http://doc.rust-lang.org/std/error/trait.FromError.html"><code>FromError</code></a>
+like trait, that can be implemented on an explicit Scope type,
+enabling conversion between non-local
+<a href="http://doc.rust-lang.org/std/error/trait.Error.html"><code>Error</code></a>
+types.</p>
 </td>
                     </tr>
                 </table></section>

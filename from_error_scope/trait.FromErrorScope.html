@@ -26,7 +26,7 @@
 
     <section class="sidebar">
         
-        <p class='location'><a href='index.html'>from_error_scope</a></p><div class='block trait'><h2>Traits</h2><a class='trait current' href='trait.FromErrorScope.html' title='A FromError like trait, that can be implemented on an explicit Scope type, enabling conversion between non-local Error types.'>FromErrorScope</a></div><div class='block macro'><h2>Macros</h2><a class='macro ' href='macro.trys!.html' title='A try like macro that takes an additional type argument for a type that implements FromErrorScope.  You may wish to wrap this macro for a specific error scope, to shorten invocations.'>trys!</a></div>
+        <p class='location'><a href='index.html'>from_error_scope</a></p><div class='block trait'><h2>Traits</h2><a class='trait current' href='trait.FromErrorScope.html' title='A [`FromError`](http://doc.rust-lang.org/std/error/trait.FromError.html) like trait, that can be implemented on an explicit Scope type, enabling conversion between non-local [`Error`](http://doc.rust-lang.org/std/error/trait.Error.html) types.'>FromErrorScope</a></div><div class='block macro'><h2>Macros</h2><a class='macro ' href='macro.trys!.html' title='A [`try!`](http://doc.rust-lang.org/std/macro.try!.html) like macro that takes an additional type argument for a type that implements [`FromErrorScope`](./trait.FromErrorScope.html).  You may wish to wrap this macro for a specific error scope, to shorten invocations.'>trys!</a></div>
     </section>
 
     <nav class="sub">
@@ -44,11 +44,15 @@
 <h1 class='fqn'><span class='in-band'>Trait <a href='index.html'>from_error_scope</a>::<wbr><a class='trait' href=''>FromErrorScope</a><wbr></span><span class='out-of-band'><span id='render-detail'>
             <a id="collapse-all" href="#">[-]
             </a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-4' href='../src/from_error_scope/lib.rs.html#59-61'>[src]</a></span></h1>
+        </span><a id='src-4' href='../src/from_error_scope/lib.rs.html#65-67'>[src]</a></span></h1>
 <pre class='rust trait'>pub trait FromErrorScope&lt;E, T&gt; {
     fn <a href='#tymethod.from_error' class='fnname'>from_error</a>(&amp;self, err: E) -&gt; T;
-}</pre><div class='docblock'><p>A FromError like trait, that can be implemented on an explicit
-Scope type, enabling conversion between non-local Error types.</p>
+}</pre><div class='docblock'><p>A
+<a href="http://doc.rust-lang.org/std/error/trait.FromError.html"><code>FromError</code></a>
+like trait, that can be implemented on an explicit Scope type,
+enabling conversion between non-local
+<a href="http://doc.rust-lang.org/std/error/trait.Error.html"><code>Error</code></a>
+types.</p>
 </div>
             <h2 id='required-methods'>Required Methods</h2>
             <div class='methods'>
